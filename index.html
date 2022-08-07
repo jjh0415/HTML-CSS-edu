@@ -5,17 +5,45 @@
     <title>jung's Futsal coaching daily</title>
     <meta charset="utf-8">
     <style>
+        body{
+            margin: 0;
+        }
+         #active{ 
+            color: red ; 
+        }
         a {
-            color: slategray ;
+            color: black;
+            text-decoration: none;
+        }
+        .saw{
+            color:gray
+        }
+        h1{
+            font-size: 40px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            margin: 0;
+            padding: 10px;
+         }
+        #border{
+            border-right: 1px solid gray;
+            width: 100px;
+            margin: 0;
+            padding:20px;
+        }
+        #grid{
+            display: grid;
+            grid-template-columns: 2fr 2fr;
         }
     </style>
-</head>
+</head> 
 
 <body>
 <h1><a href="index.html">SLS WFC Coaching Program</a></h1>
-    <ol>
-        <li><a href="1.html">Pass</a></li>
-        <li><a href="2.html">Shoting</a></li>
+<div id="grid">
+    <ol id="border">
+        <li><a href="1.html" class="saw">Pass</a></li>
+        <li><a href="2.html" class="saw" id="active">Shoting</a></li>
         <li><a href="3.html">Dribble</a></li>
     </ol>
     
@@ -33,6 +61,9 @@
         더 많은 득점을 낸 팀이 승리팀이며 만약 무득점이거나 득점수가 같으면 이 경기는 무승부가 된다.
             [네이버 지식백과] 풋살 [futsal] (스포츠 백과, 2008., 대한체육회)</p>
     </ol>
+</div> 
+
+
     <input type="checkbox">
 </body>
 
